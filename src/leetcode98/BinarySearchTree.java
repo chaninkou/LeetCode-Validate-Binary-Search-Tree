@@ -14,8 +14,10 @@ public class BinarySearchTree {
         
         Stack<TreeNode> stack = new Stack<>();
         
+        // Our previous should not be bigger than current
         TreeNode prev = null;
         
+        // Inorder
         while(root != null || !stack.isEmpty()){
             while(root != null){
                 stack.add(root);
@@ -24,6 +26,7 @@ public class BinarySearchTree {
             
             root = stack.pop();
             
+            // Since inorder should be non decreasing value
             if(prev != null && root.val <= prev.val){
                 return false;
             }

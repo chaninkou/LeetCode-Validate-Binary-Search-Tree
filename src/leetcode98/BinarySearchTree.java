@@ -17,7 +17,7 @@ public class BinarySearchTree {
         // Our previous should not be bigger than current
         TreeNode prev = null;
         
-        // Inorder
+        // Inorder checking
         while(root != null || !stack.isEmpty()){
             while(root != null){
                 stack.add(root);

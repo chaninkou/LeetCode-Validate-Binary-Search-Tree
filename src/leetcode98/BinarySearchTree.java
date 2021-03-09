@@ -7,7 +7,7 @@ import java.util.Stack;
 public class BinarySearchTree {
 	TreeNode root;
 	
-	// In order to check BST
+	// Inorder to check BST
 	public boolean isValidBST(TreeNode root) {
         if(root == null){
             return true;
